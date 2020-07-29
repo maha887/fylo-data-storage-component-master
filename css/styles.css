@@ -21,7 +21,7 @@ body{
 }
 
 .left-container{
-  margin:0 0 30px 50px;
+  margin:0 0 20px 50px;
   border-radius: 10px 90px 10px 10px ;
   line-height: 4.5;
   width: 400px;
@@ -40,8 +40,8 @@ body{
   padding-top: 35px;
   padding-bottom: 0;
   height: 150px;
-  margin-top: 30px;
-  /* width: 400px; */
+  margin-top: 28px;
+  width: 400px;
   margin-left: 50px;
 }
 
@@ -120,4 +120,44 @@ body{
   height: 300px;
   position: relative;
   top: 325px;
+}
+
+@media (max-width:900px){
+  .container{
+    background: url(/images/bg-mobile.png) no-repeat center center/cover;
+    flex-direction: column;
+    position: relative;
+    bottom: 200px;
+    margin-top: 0;
+    margin-right:  50px;
+  }
+
+  .right-container{
+    height: 160px;
+  }
+
+  .short-p{
+    padding: 10px 20px;
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 110px;
+    left: 120px;
+  }
+
+  .strong-nmbuer{
+    font-size: 2rem;
+  }
+
+  .short-p ::after{
+    border-left: 0px solid transparent;
+    border-right: 0px solid #fff;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+
+  .progress-mini-bar{
+    position: absolute;
+    right: 104px
+  }
 }
